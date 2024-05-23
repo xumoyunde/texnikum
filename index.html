@@ -11,15 +11,16 @@
 </head>
 
 <body>
-    <header>
-        <div class="logo"><a href="#">Texnikum</a></div>
+    <header class="fixed-header">
+        <div class="logo"><a href="#">Technical School</a></div>
         <input type="checkbox" id="nav_check" hidden>
         <nav>
             <ul>
-                <li><a href="" class="active">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Contact</a></li>
-                <li><a href="">Help</a></li>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#teachers">Teachers</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
         <label for="nav_check" class="hamburger" onclick="myFunction(this)">
@@ -32,7 +33,7 @@
         <!-- HOME -->
         <section id="home" class="hero-section">
             <h2>Start Learning</h2>
-            <p>Improve your knowledge through various courses and classes.</p><br>
+            <p>Improve your knowledge through various courses and classes.</p><br>j
             <a href="#courses" class="btn">View our courses</a>
         </section>
 
@@ -194,7 +195,7 @@
         </section>
 
         <!-- TEACHERS -->
-        <div class="teachers-section">
+        <section id="teachers" class="teachers-section">
             <h2>Our Teachers</h2>
             <div class="teacher-containers">
                 <div class="teacher-container">
@@ -218,25 +219,52 @@
                 <button class="nav-button" id="prev-button">&lt;</button>
                 <button class="nav-button" id="next-button">&gt;</button>
             </div>
-        </div>
+        </section>
 
         <!-- CONTACT -->
         <section id="contact" class="contact-section">
-            <h2>Aloqa</h2>
+            <h2>Contact</h2>
             <form>
-                <label for="name">Ismingiz: </label>
+                <label for="name">Name: </label>
                 <input type="text" id="name" name="name">
                 <label for="email">Email: </label>
                 <input type="email" id="email" name="email">
-                <label for="message">Xabar: </label>
+                <label for="message">Message: </label>
                 <textarea id="message" name="message"></textarea>
-                <button type="submit">Yuborish</button>
+                <button type="submit">Send</button>
             </form>
         </section>
 
     </main>
-    <footer>
-        <p>&copy; 2024 Ta'lim Platformasi. Barcha huquqlar himoyalangan.</p>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>About Us</h3>
+                    <p>We are a leading educational institution dedicated to providing high-quality education and
+                        training.</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li><i class="fa fa-map-marker"></i> 123 Main Street, Anytown, CA 12345</li>
+                        <li><i class="fa fa-phone"></i> (123) 456-7890</li>
+                        <li><i class="fa fa-envelope"></i> info@example.com</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h3>Social Media</h3>
+                    <ul class="social-media">
+                        <li><a href="https://www.facebook.com/lakeshoretechnicalcollege" target="_blank"><img src="images/facebook.png" alt="facebook"></a></li>
+                        <li><a href="https://x.com/lakeshoretech" target="_blank"><img src="images/twitter.png" alt="twitter"></a></li>
+                        <li><a href="https://www.instagram.com/lakeshoretech/" target="_blank"><img src="images/instagram.png" alt="instagram"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <p>&copy; 2024 Education Platform. All rights reserved..</p>
     </footer>
 </body>
 
